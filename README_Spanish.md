@@ -32,13 +32,13 @@ You can use Apache APISIX to handle traditional north-south traffic,
 as well as east-west traffic between services.
 It can also be used as a [k8s ingress controller](https://github.com/apache/apisix-ingress-controller).
 
-The technical architecture of Apache APISIX:
+La arquitectura técnica de Apache APISIX:
 
 ![](doc/images/apisix.png)
 
-## Community
+## Communidad
 
-- Mailing List: Mail to dev-subscribe@apisix.apache.org, follow the reply to subscribe the mailing list.
+- Lista de Correos: Enviar correos a dev-subscribe@apisix.apache.org, luego siga la respuesta para suscribirse a la Lista de Correos.
 - QQ Group - 578997126
 - [Slack Workspace](http://s.apache.org/slack-invite) - join `#apisix` on our Slack to meet the team and ask questions
 - ![Twitter Follow](https://img.shields.io/twitter/follow/ApacheAPISIX?style=social) - follow and interact with us using hashtag `#ApacheAPISIX`
