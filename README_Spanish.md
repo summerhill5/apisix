@@ -30,7 +30,7 @@ APISIX proporciona variadas opciones de manejo de tráfico tales como balanceo d
 
 Usted puede usar Apache APISIX para manejar el tráfico tradicional norte-sur,
 así como tráfico este-oeste entre servicios.
-También puede usarse como [k8s ingress controller](https://github.com/apache/apisix-ingress-controller).
+También puede usarse como [k8s ingress controller (control de ingreso)](https://github.com/apache/apisix-ingress-controller).
 
 La arquitectura técnica de Apache APISIX:
 
