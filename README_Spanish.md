@@ -59,9 +59,9 @@ ensayos A/B, ensayos de despliegue de canarios (canary release), despliegue azul
 
 - **All platforms**
 
-  - Cloud-Native: Platform agnostic, No vendor lock-in, APISIX can run from bare-metal to Kubernetes.
-  - Run Environment: Both OpenResty and Tengine are supported.
-  - Supports ARM64: Don't worry about the lock-in of the infra technology.
+  - Nativo de la Nube: Agnóstico de Plataforma, libre de restricciones del vendedor, APISIX puede ejecutarse desde metal desnudo hasta Kubernetes.
+  - Entorno de Ejecución: Soporta tanto OpenResty como Tengine.
+  - Soporta ARM64: No hay que preocuparse por las restricciones de la infra tecnología.
 
 - **Multi protocols**
 
