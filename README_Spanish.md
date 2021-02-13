@@ -52,10 +52,10 @@ La arquitectura técnica de Apache APISIX:
   - [Sitio Web Apache APISIX](https://github.com/apache/apisix-website/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22)
   - [El Plano de Control para APISIX](https://github.com/apache/apisix-control-plane/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22)
 
-## Features
+## Características
 
-You can use Apache APISIX as a traffic entrance to process all business data, including dynamic routing, dynamic upstream, dynamic certificates,
-A/B testing, canary release, blue-green deployment, limit rate, defense against malicious attacks, metrics, monitoring alarms, service observability, service governance, etc.
+Usted puede usar Apache APISIX como un acceso de tráfico para procesar todos los datos del negocio, incluyendo direccionamiento dinámico (dynamic routing), upstream dinámico, certificados dinámicos,
+ensayos A/B, ensayos de despliegue de canarios (canary release), despliegue azul-verde (blue-green), límite de tasa, defensa contra ataques maliciosos, métrica, monitoreo de alarmas, visibilidad de servicios, gobernabilidad de servicios, etc.
 
 - **All platforms**
 
