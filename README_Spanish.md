@@ -57,24 +57,24 @@ La arquitectura técnica de Apache APISIX:
 Usted puede usar Apache APISIX como un acceso de tráfico para procesar todos los datos del negocio, incluyendo direccionamiento dinámico (dynamic routing), upstream dinámico, certificados dinámicos,
 ensayos A/B, ensayos de despliegue de canarios (canary release), despliegue azul-verde (blue-green), límite de tasa, defensa contra ataques maliciosos, métrica, monitoreo de alarmas, visibilidad de servicios, gobernabilidad de servicios, etc.
 
-- **All platforms**
+- **Todas las Plataformas**
 
   - Nativo de la Nube: Agnóstico de Plataforma, libre de restricciones del vendedor, APISIX puede ejecutarse desde metal desnudo hasta Kubernetes.
   - Entorno de Ejecución: Soporta tanto OpenResty como Tengine.
   - Soporta ARM64: No hay que preocuparse por las restricciones de la infra tecnología.
 
-- **Multi protocols**
+- **Multi protocolos**
 
-  - [TCP/UDP Proxy](doc/stream-proxy.md): Dynamic TCP/UDP proxy.
-  - [Dubbo Proxy](doc/plugins/dubbo-proxy.md): Dynamic HTTP to Dubbo proxy.
-  - [Dynamic MQTT Proxy](doc/plugins/mqtt-proxy.md): Supports to load balance MQTT by `client_id`, both support MQTT [3.1.\*](http://docs.oasis-open.org/mqtt/mqtt/v3.1.1/os/mqtt-v3.1.1-os.html), [5.0](https://docs.oasis-open.org/mqtt/mqtt/v5.0/mqtt-v5.0.html).
-  - [gRPC proxy](doc/grpc-proxy.md): Proxying gRPC traffic.
-  - [gRPC transcoding](doc/plugins/grpc-transcode.md): Supports protocol transcoding so that clients can access your gRPC API by using HTTP/JSON.
-  - Proxy Websocket
-  - Proxy Protocol
-  - Proxy Dubbo: Dubbo Proxy based on Tengine.
-  - HTTP(S) Forward Proxy
-  - [SSL](doc/https.md): Dynamically load an SSL certificate.
+  - [Proxy TCP/UDP](doc/stream-proxy.md): Proxy TCP/UDP dinámico.
+  - [Proxy Dubbo](doc/plugins/dubbo-proxy.md): Proxy dinámico HTTP a Dubbo.
+  - [Proxy MQTT Dinámico](doc/plugins/mqtt-proxy.md): Soporte de balance de carga MQTT por `client_id`, soporta ambos MQTT [3.1.\*](http://docs.oasis-open.org/mqtt/mqtt/v3.1.1/os/mqtt-v3.1.1-os.html), [5.0](https://docs.oasis-open.org/mqtt/mqtt/v5.0/mqtt-v5.0.html).
+  - [Proxy gRPC](doc/grpc-proxy.md): Tráfico gRPC a través de Proxy.
+  - [Transcodificado gRPC](doc/plugins/grpc-transcode.md): Soporta transcodificado de protocolo para que los clientes puedan acceder su gRPC API usando HTTP/JSON.
+  - Proxy de Websocket
+  - Proxy de Protocolo
+  - Proxy Dubbo: Proxy de Dubbo basado en Tengine.
+  - Proxy de HTTP(S) hacia adelante
+  - [SSL](doc/https.md): Carga dinámica de certificado SSL.
 
 - **Full dynamic**
 
