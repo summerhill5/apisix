@@ -24,13 +24,13 @@
 [![Build Status](https://github.com/apache/apisix/workflows/build/badge.svg?branch=master)](https://github.com/apache/apisix/actions)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://github.com/apache/apisix/blob/master/LICENSE)
 
-**Apache APISIX** is a dynamic, real-time, high-performance API gateway.
+**Apache APISIX** es un portal API en tiempo real, dinámico y de alto rendimiento.
 
-APISIX provides rich traffic management features such as load balancing, dynamic upstream, canary release, circuit breaking, authentication, observability, and more.
+APISIX proporciona variadas opciones de manejo de tráfico tales como balanceo de cargas, upstream dinámico, comprobación tipo despliegue de canarios (canary release), interrupción de circuitos, autenticación, observabilidad y más.
 
-You can use Apache APISIX to handle traditional north-south traffic,
-as well as east-west traffic between services.
-It can also be used as a [k8s ingress controller](https://github.com/apache/apisix-ingress-controller).
+Usted puede usar Apache APISIX para manejar el tráfico tradicional norte-sur,
+así como tráfico este-oeste entre servicios.
+También puede usarse como [k8s ingress controller](https://github.com/apache/apisix-ingress-controller).
 
 La arquitectura técnica de Apache APISIX:
 
