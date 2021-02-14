@@ -109,8 +109,8 @@ ensayos A/B, ensayos de despliegue de canarios (canary release), despliegue azul
   - [Límite de procesamiento de solicitudes (Limit-req)](doc/plugins/limit-req.md)
   - [Límite de contador (Limit-count)](doc/plugins/limit-count.md)
   - [Límite de concurrencia (Limit-concurrency)](doc/plugins/limit-conn.md)
-  - Anti-ReDoS(Negación regular del servicio): políticas integradas para Anti ReDoS sin configuración.
-  - [CORS](doc/plugins/cors.md) Activa CORS(Compartir recursos de origen cruzado) para su API.
+  - Anti-ReDoS (Negación regular del servicio): políticas integradas para Anti ReDoS sin configuración.
+  - [CORS](doc/plugins/cors.md) Activa CORS (Compartir recursos de origen cruzado) para su API.
   - [Bloqueador URI](doc/plugins/uri-blocker.md): Bloquea solicitudes del cliente por URI.
   - [Validador de solicitudes (Request Validator)](doc/plugins/request-validation.md)
 
