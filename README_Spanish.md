@@ -106,7 +106,7 @@ ensayos A/B, ensayos de despliegue de canarios (canary release), despliegue azul
   - [IP Whitelist/Blacklist](doc/plugins/ip-restriction.md)
   - [Referente Whitelist/Blacklist (listas blancas y negras)](doc/plugins/referer-restriction.md)
   - [IdP](doc/plugins/openid-connect.md): Soporta servicios externos de autenticación, tales como Auth0, okta, etc., los usuarios pueden usar esto para conectarse a OAuth 2.0 y otros métodos de autenticación.
-  - [Límite de registro (Limit-req)](doc/plugins/limit-req.md)
+  - [Límite de procesamiento de solicitudes (Limit-req)](doc/plugins/limit-req.md)
   - [Límite de contador (Limit-count)](doc/plugins/limit-count.md)
   - [Límite de concurrencia (Limit-concurrency)](doc/plugins/limit-conn.md)
   - Anti-ReDoS(Negación regular del servicio): políticas integradas para Anti ReDoS sin configuración.
