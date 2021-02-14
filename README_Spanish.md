@@ -133,23 +133,23 @@ ensayos A/B, ensayos de despliegue de canarios (canary release), despliegue azul
   - [Cartas Helm](https://github.com/apache/apisix-helm-chart)
 
 - **Altamente escalable**
-  - [Custom plugins](doc/plugin-develop.md): Allows hooking of common phases, such as `rewrite`, `access`, `header filer`, `body filter` and `log`, also allows to hook the `balancer` stage.
-  - Custom load balancing algorithms: You can use custom load balancing algorithms during the `balancer` phase.
-  - Custom routing: Support users to implement routing algorithms themselves.
+  - [Plugins personalizados](doc/plugin-develop.md): Permite engancharse en fases comunes, tales como `rewrite`, `access`, `header filer`, `body filter` y `log`, y también permite engancharse en la etapa `balancer`.
+  - Carga personalizada de algoritmos de balanceo: Usted puede cargar los algoritmos de balanceo de manera personalizada durante la fase de `balancer`.
+  - Routing personalizado: Soporta que los usuarios implementen algoritmos de enrutamiento por sí mismos.
 
-## Get Started
+## Comenzando
 
-### Configure and Installation
+### Configuración e Instalación
 
-APISIX Installed and tested in the following systems:
+APISIX ha sido instalado y probado en los siguientes sistemas:
 
 CentOS 7, Ubuntu 16.04, Ubuntu 18.04, Debian 9, Debian 10, macOS, **ARM64** Ubuntu 18.04
 
-There are several ways to install the Apache Release version of APISIX:
+Hay varias maneras de instalar la versión publicada Apache de APISIX:
 
-1. Source code compilation (applicable to all systems)
-   - Installation runtime dependencies: OpenResty and etcd, and compilation dependencies: luarocks. Refer to [install dependencies documentation](doc/install-dependencies.md)
-   - Download the latest source code release package:
+1. Compilación de código fuente (aplicable a todos los sistemas)
+   - Instalación de dependencias en tiempo de ejecución: OpenResty y etcd, y dependencias de compilación: luarocks. Consultar [install dependencies documentation](doc/install-dependencies.md)
+   - Bajar el paquete de publicación más reciente de código fuente:
 
      ```shell
      $ mkdir apisix-2.3
@@ -157,33 +157,33 @@ There are several ways to install the Apache Release version of APISIX:
      $ tar zxvf apache-apisix-2.3-src.tgz -C apisix-2.3
      ```
 
-   - Install the dependencies：
+   - Instalar las dependencias：
 
      ```shell
      $ make deps
      ```
 
-   - check version of APISIX:
+   - Chequear la versión de APISIX:
 
      ```shell
      $ ./bin/apisix version
      ```
 
-   - start APISIX:
+   - Iniciar APISIX:
 
      ```shell
      $ ./bin/apisix start
      ```
 
-2. [Docker image](https://hub.docker.com/r/apache/apisix) （applicable to all systems）
+2. [Imagen del contenedor Docker](https://hub.docker.com/r/apache/apisix) （aplicable a todos los sistemas）
 
-   By default, the latest Apache release package will be pulled:
+   Por defecto, el paquete de Apache de más reciente publicación será descargado:
 
    ```shell
    $ docker pull apache/apisix
    ```
 
-   The Docker image does not include `etcd`, you can refer to [docker compose example](https://github.com/apache/apisix-docker/tree/master/example) to start a test cluster.
+   La imagen del contenedor Docker no incluye `etcd`, usted puede consultar [docker compose example](https://github.com/apache/apisix-docker/tree/master/example) para iniciar un grupo de ensayos.
 
 3. RPM package（only for CentOS 7）
    - Installation runtime dependencies: OpenResty, etcd and OpenSSL develop library, refer to [install dependencies documentation](doc/install-dependencies.md#centos-7)
