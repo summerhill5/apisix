@@ -89,20 +89,20 @@ ensayos A/B, ensayos de despliegue de canarios (canary release), despliegue azul
   - [Reflejo de proxy (mirror)](doc/plugins/proxy-mirror.md): Proporciona la capacidad de reflejar (mirror) los request (solicitudes) del cliente.
   - [Bifurcación de tráfico](doc/plugins/traffic-split.md): Permite a los usuarios dirigir de manera creciente porciones del tráfico entre varias corrientes aguas arriba (upstreams).
 
-- **Fine-grained routing**
+- **Enrutamiento con control fino (fine grain)**
 
-  - [Supports full path matching and prefix matching](doc/router-radixtree.md#how-to-use-libradixtree-in-apisix)
-  - [Support all Nginx built-in variables as conditions for routing](/doc/router-radixtree.md#how-to-filter-route-by-nginx-builtin-variable), so you can use `cookie`, `args`, etc. as routing conditions to implement canary release, A/B testing, etc.
-  - Support [various operators as judgment conditions for routing](https://github.com/iresty/lua-resty-radixtree#operator-list), for example `{"arg_age", ">", 24}`
-  - Support [custom route matching function](https://github.com/iresty/lua-resty-radixtree/blob/master/t/filter-fun.t#L10)
-  - IPv6: Use IPv6 to match route.
-  - Support [TTL](doc/admin-api.md#route)
-  - [Support priority](doc/router-radixtree.md#3-match-priority)
-  - [Support Batch Http Requests](doc/plugins/batch-requests.md)
+  - [Soporta correspondencia completa de la ruta y correspondencia del prefijo](doc/router-radixtree.md#how-to-use-libradixtree-in-apisix)
+  - [Soporta todas las variables integradas en Nginx como condiciones para el enrutamiento](/doc/router-radixtree.md#how-to-filter-route-by-nginx-builtin-variable), así que pueden usarse `cookie`, `args`, etc. como condiciones de enrutamiento para implementar ensayos de desplegado de canarios, ensayoss A/B, etc.
+  - Soporta [varios operadores como condiciones de juicio para el enrutamiento](https://github.com/iresty/lua-resty-radixtree#operator-list), por ejemplo `{"arg_age", ">", 24}`
+  - Soporta [función personalizada de correspondencia de ruta](https://github.com/iresty/lua-resty-radixtree/blob/master/t/filter-fun.t#L10)
+  - IPv6: Usar IPv6 para hacer corresponder la ruta.
+  - Soporta [TTL](doc/admin-api.md#route)
+  - [Soporta prioridades](doc/router-radixtree.md#3-match-priority)
+  - [Soporta solicitudes Batch Http (por lotes)](doc/plugins/batch-requests.md)
 
-- **Security**
+- **Seguridad**
 
-  - Authentications: [key-auth](doc/plugins/key-auth.md), [JWT](doc/plugins/jwt-auth.md), [basic-auth](doc/plugins/basic-auth.md), [wolf-rbac](doc/plugins/wolf-rbac.md)
+  - Autenticaciones: [key-auth](doc/plugins/key-auth.md), [JWT](doc/plugins/jwt-auth.md), [basic-auth](doc/plugins/basic-auth.md), [wolf-rbac](doc/plugins/wolf-rbac.md)
   - [IP Whitelist/Blacklist](doc/plugins/ip-restriction.md)
   - [Referer Whitelist/Blacklist](doc/plugins/referer-restriction.md)
   - [IdP](doc/plugins/openid-connect.md): Support external authentication services, such as Auth0, okta, etc., users can use this to connect to OAuth 2.0 and other authentication methods.
