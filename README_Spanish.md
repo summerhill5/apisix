@@ -128,11 +128,11 @@ ensayos A/B, ensayos de despliegue de canarios (canary release), despliegue azul
   - [Regla global](doc/architecture-design.md#global-rule): Permite ejecutar cualquier plugin para todas las solicitudes, como: limit rate, IP filter etc.
   - Alto desempeño: El QPS de un sólo núcleo alcanza 18k con un retraso promedio de menos de 0.2 milisegundos.
   - [Fault Injection](doc/plugins/fault-injection.md)
-  - [REST Admin API](doc/admin-api.md): Using the REST Admin API to control Apache APISIX, which only allows 127.0.0.1 access by default, you can modify the `allow_admin` field in `conf/config.yaml` to specify a list of IPs that are allowed to call the Admin API. Also note that the Admin API uses key auth to verify the identity of the caller. **The `admin_key` field in `conf/config.yaml` needs to be modified before deployment to ensure security**.
-  - External Loggers: Export access logs to external log management tools. ([HTTP Logger](doc/plugins/http-logger.md), [TCP Logger](doc/plugins/tcp-logger.md), [Kafka Logger](doc/plugins/kafka-logger.md), [UDP Logger](doc/plugins/udp-logger.md))
-  - [Helm charts](https://github.com/apache/apisix-helm-chart)
+  - [REST Admin API](doc/admin-api.md): Al usar REST Admin API para controlar Apache APISIX, el cual solamente permite acceso 127.0.0.1 por defecto, usted puede modificar el campo `allow_admin` en `conf/config.yaml` para especificar una lista de IPs a los que se les permite llamar el Admin API. Nótese también que el Admin API utiliza autentificación de clave (key auth) para verificar la identidad de quien llama. **El campo `admin_key` en `conf/config.yaml` debe ser modificado antes del despliegue para asegurar la seguridad**.
+  - Loggers (accesos de registro) externos: Exporte accesos de registro para herramientas de control de acceso externo. ([HTTP Logger](doc/plugins/http-logger.md), [TCP Logger](doc/plugins/tcp-logger.md), [Kafka Logger](doc/plugins/kafka-logger.md), [UDP Logger](doc/plugins/udp-logger.md))
+  - [Cartas Helm](https://github.com/apache/apisix-helm-chart)
 
-- **Highly scalable**
+- **Altamente escalable**
   - [Custom plugins](doc/plugin-develop.md): Allows hooking of common phases, such as `rewrite`, `access`, `header filer`, `body filter` and `log`, also allows to hook the `balancer` stage.
   - Custom load balancing algorithms: You can use custom load balancing algorithms during the `balancer` phase.
   - Custom routing: Support users to implement routing algorithms themselves.
