@@ -104,15 +104,15 @@ ensayos A/B, ensayos de despliegue de canarios (canary release), despliegue azul
 
   - Autenticaciones: [key-auth](doc/plugins/key-auth.md), [JWT](doc/plugins/jwt-auth.md), [basic-auth](doc/plugins/basic-auth.md), [wolf-rbac](doc/plugins/wolf-rbac.md)
   - [IP Whitelist/Blacklist](doc/plugins/ip-restriction.md)
-  - [Referer Whitelist/Blacklist](doc/plugins/referer-restriction.md)
-  - [IdP](doc/plugins/openid-connect.md): Support external authentication services, such as Auth0, okta, etc., users can use this to connect to OAuth 2.0 and other authentication methods.
-  - [Limit-req](doc/plugins/limit-req.md)
-  - [Limit-count](doc/plugins/limit-count.md)
-  - [Limit-concurrency](doc/plugins/limit-conn.md)
-  - Anti-ReDoS(Regular expression Denial of Service): Built-in policies to Anti ReDoS without configuration.
-  - [CORS](doc/plugins/cors.md) Enable CORS(Cross-origin resource sharing) for your API.
-  - [URI Blocker](doc/plugins/uri-blocker.md): Block client request by URI.
-  - [Request Validator](doc/plugins/request-validation.md)
+  - [Referente Whitelist/Blacklist (listas blancas y negras)](doc/plugins/referer-restriction.md)
+  - [IdP](doc/plugins/openid-connect.md): Soporta servicios externos de autenticación, tales como Auth0, okta, etc., los usuarios pueden usar esto para conectarse a OAuth 2.0 y otros métodos de autenticación.
+  - [Límite de registro (Limit-req)](doc/plugins/limit-req.md)
+  - [Límite de contador (Limit-count)](doc/plugins/limit-count.md)
+  - [Límite de concurrencia (Limit-concurrency)](doc/plugins/limit-conn.md)
+  - Anti-ReDoS(Negación regular del servicio): políticas integradas para Anti ReDoS sin configuración.
+  - [CORS](doc/plugins/cors.md) Activa CORS(Compartir recursos de origen cruzado) para su API.
+  - [Bloqueador URI](doc/plugins/uri-blocker.md): Bloquea solicitudes del cliente por URI.
+  - [Validador de solicitudes (Request Validator)](doc/plugins/request-validation.md)
 
 - **OPS friendly**
 
