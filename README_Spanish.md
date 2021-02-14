@@ -118,15 +118,15 @@ ensayos A/B, ensayos de despliegue de canarios (canary release), despliegue azul
 
   - OpenTracing (rastreo abierto): Soporta [Apache Skywalking](doc/plugins/skywalking.md) y [Zipkin](doc/plugins/zipkin.md)
   - Trabaja con descubrimiento de servicio externo：Aparte del etcd integrado (Equipo Terminal del Circuito de Datos), también soporta `Consul` y `Nacos` [DNS en modo descubrimiento](https://github.com/apache/apisix/issues/1731#issuecomment-646392129), y [Eureka](doc/discovery.md)
-  - Monitoring And Metrics: [Prometheus](doc/plugins/prometheus.md)
-  - Clustering: APISIX nodes are stateless, creates clustering of the configuration center, please refer to [etcd Clustering Guide](https://github.com/etcd-io/etcd/blob/master/Documentation/op-guide/clustering.md).
-  - High availability: support to configure multiple etcd addresses in the same cluster.
-  - [Dashboard](https://github.com/apache/apisix-dashboard)
-  - Version Control: Supports rollbacks of operations.
-  - CLI: start\stop\reload APISIX through the command line.
-  - [Stand-alone mode](doc/stand-alone.md): Supports to load route rules from local yaml file, it is more friendly such as under the kubernetes(k8s).
-  - [Global Rule](doc/architecture-design.md#global-rule): Allows to run any plugin for all request, eg: limit rate, IP filter etc.
-  - High performance: The single-core QPS reaches 18k with an average delay of less than 0.2 milliseconds.
+  - Monitoreo y métrica (control de mediciones): [Prometheus](doc/plugins/prometheus.md)
+  - Agrupación (clustering): Nodos APISIX sin estados, crea agrupaciones del centro de configuración, por favor consultar [etcd Clustering Guide](https://github.com/etcd-io/etcd/blob/master/Documentation/op-guide/clustering.md).
+  - Alta disponibilidad: Soporta configurar múltiples direcciones etcd en el mismo grupo (cluster).
+  - [Tablero](https://github.com/apache/apisix-dashboard)
+  - Control de versión: Soporta retroceso o deshacer de operaciones.
+  - CLI: comenzar\detenerse\recargar APISIX usando la línea de comando.
+  - [Modo stand-alone (por su cuenta)](doc/stand-alone.md): Soporta cargar reglas de ruta desde un archivo local yaml, siendo más amigable que kubernetes(k8s).
+  - [Regla global](doc/architecture-design.md#global-rule): Permite ejecutar cualquier plugin para todas las solicitudes, como: limit rate, IP filter etc.
+  - Alto desempeño: El QPS de un sólo núcleo alcanza 18k con un retraso promedio de menos de 0.2 milisegundos.
   - [Fault Injection](doc/plugins/fault-injection.md)
   - [REST Admin API](doc/admin-api.md): Using the REST Admin API to control Apache APISIX, which only allows 127.0.0.1 access by default, you can modify the `allow_admin` field in `conf/config.yaml` to specify a list of IPs that are allowed to call the Admin API. Also note that the Admin API uses key auth to verify the identity of the caller. **The `admin_key` field in `conf/config.yaml` needs to be modified before deployment to ensure security**.
   - External Loggers: Export access logs to external log management tools. ([HTTP Logger](doc/plugins/http-logger.md), [TCP Logger](doc/plugins/tcp-logger.md), [Kafka Logger](doc/plugins/kafka-logger.md), [UDP Logger](doc/plugins/udp-logger.md))
