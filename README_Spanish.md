@@ -114,10 +114,10 @@ ensayos A/B, ensayos de despliegue de canarios (canary release), despliegue azul
   - [Bloqueador URI](doc/plugins/uri-blocker.md): Bloquea solicitudes del cliente por URI.
   - [Validador de solicitudes (Request Validator)](doc/plugins/request-validation.md)
 
-- **OPS friendly**
+- **OPS amigable**
 
-  - OpenTracing: support [Apache Skywalking](doc/plugins/skywalking.md) and [Zipkin](doc/plugins/zipkin.md)
-  - works with external service discovery：In addition to the built-in etcd, it also supports `Consul` and `Nacos` [DNS discovery mode](https://github.com/apache/apisix/issues/1731#issuecomment-646392129), and [Eureka](doc/discovery.md)
+  - OpenTracing (rastreo abierto): Soporta [Apache Skywalking](doc/plugins/skywalking.md) y [Zipkin](doc/plugins/zipkin.md)
+  - Trabaja con descubrimiento de servicio externo：Aparte del etcd integrado (Equipo Terminal del Circuito de Datos), también soporta `Consul` y `Nacos` [DNS en modo descubrimiento](https://github.com/apache/apisix/issues/1731#issuecomment-646392129), y [Eureka](doc/discovery.md)
   - Monitoring And Metrics: [Prometheus](doc/plugins/prometheus.md)
   - Clustering: APISIX nodes are stateless, creates clustering of the configuration center, please refer to [etcd Clustering Guide](https://github.com/etcd-io/etcd/blob/master/Documentation/op-guide/clustering.md).
   - High availability: support to configure multiple etcd addresses in the same cluster.
