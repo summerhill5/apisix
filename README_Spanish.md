@@ -76,18 +76,18 @@ ensayos A/B, ensayos de despliegue de canarios (canary release), despliegue azul
   - Proxy de HTTP(S) hacia adelante
   - [SSL](doc/https.md): Carga dinámica de certificado SSL.
 
-- **Full dynamic**
+- **Completamente Dinámico**
 
-  - [Hot Updates And Hot Plugins](doc/plugins.md): Continuously updates its configurations and plugins without restarts!
-  - [Proxy Rewrite](doc/plugins/proxy-rewrite.md): Support rewrite the `host`, `uri`, `schema`, `enable_websocket`, `headers` of the request before send to upstream.
-  - [Response Rewrite](doc/plugins/response-rewrite.md): Set customized response status code, body and header to the client.
-  - [Serverless](doc/plugins/serverless.md): Invoke functions in each phase in APISIX.
-  - Dynamic Load Balancing: Round-robin load balancing with weight.
-  - Hash-based Load Balancing: Load balance with consistent hashing sessions.
-  - [Health Checks](doc/health-check.md): Enable health check on the upstream node, and will automatically filter unhealthy nodes during load balancing to ensure system stability.
-  - Circuit-Breaker: Intelligent tracking of unhealthy upstream services.
-  - [Proxy Mirror](doc/plugins/proxy-mirror.md): Provides the ability to mirror client requests.
-  - [Traffic Split](doc/plugins/traffic-split.md): Allows users to incrementally direct percentages of traffic between various upstreams.
+  - [Las actualizaciones y los plugins más recientes](doc/plugins.md): Actualiza sus configuraciones y plugins sin reinicios!
+  - [Reescritura de proxy](doc/plugins/proxy-rewrite.md): Soporta la reescritura de `host`, `uri`, `schema`, `enable_websocket`, `headers` para el request antes de reenviarlo aguas arriba (upstream).
+  - [Reescritura de respuesta](doc/plugins/response-rewrite.md): Establece el código de estatus de respuesta personalizado, así como el cuerpo y el encabezado para el cliente.
+  - [Sin servidor (serverless)](doc/plugins/serverless.md): Invoque funciones en cada fase en APISIX.
+  - Balance dinámico de cargas: Balanceo de cargas Round-robin usando pesos.
+  - Balance de cargas basado en Hash: Balanceo de cargas con sesiones de hashing consistentes.
+  - [Comprobaciones del sistema](doc/health-check.md): Permite comprobaciones del sistema en el nodo aguas arriba, y automáticamente filtrará nodos problemáticos durante el balanceo de cargas para asegurar la estabilidad del sistema.
+  - Interruptor del circuito: Rastreo inteligente de servicios aguas arriba que tengan problemas.
+  - [Reflejo de proxy (mirror)](doc/plugins/proxy-mirror.md): Proporciona la capacidad de reflejar (mirror) los request (solicitudes) del cliente.
+  - [Bifurcación de tráfico](doc/plugins/traffic-split.md): Permite a los usuarios dirigir de manera creciente porciones del tráfico entre varias corrientes aguas arriba (upstreams).
 
 - **Fine-grained routing**
 
