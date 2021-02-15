@@ -277,7 +277,7 @@ Al usar el servidor de 8 núcleos de AWS, los QPS de APISIX alcanzan 140,000 con
 | CPU de un solo núcleo, QPS (activa limit-count y plugins prometheus) | 18000                                             | 1700                    |
 | Latencia                                                         | 0.2 ms                                            | 2 ms                    |
 | Dubbo                                                           | Sí                                               | No                      |
-| Retroceso de configuration                                          | Sí                                               | No                      |
+| Retroceso-deshacer de configuration                                          | Sí                                               | No                      |
 | Ruta con TTL                                                  | Sí                                               | No                      |
 | Plug-in carga en caliente                                             | Sí                                               | No                      |
 | LB y ruta personalizados                                             | Sí                                               | No                      |
@@ -289,7 +289,7 @@ Al usar el servidor de 8 núcleos de AWS, los QPS de APISIX alcanzan 140,000 con
 | IdP                                                             | Sí                                               | No                      |
 | Centro de configuración HA                                         | Sí                                               | No                      |
 | Límite de velocidad para una ventana específica de tiempo         | Sí                                               | No                      |
-| Soporta cualquier variable Nginx cono condición de enrutamiento      | Sí                                               | No                      |
+| Soporta cualquier variable Nginx como condición de enrutamiento      | Sí                                               | No                      |
 
 Ensayo de comparación de desempeño [datos detallados](https://gist.github.com/membphis/137db97a4bf64d3653aa42f3e016bd01)
 
