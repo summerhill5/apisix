@@ -321,7 +321,7 @@ Una gran variedad de compañías y organizacioes usan APISIX para investigación
 
 Se alienta a los usuarios a sumarse a la página [Powered By](doc/powered-by.md).
 
-## Landscape
+## Landscape (panorama)
 
 <p align="left">
 <img src="https://landscape.cncf.io/images/left-logo.svg" width="150">&nbsp;&nbsp;<img src="https://landscape.cncf.io/images/right-logo.svg" width="200">
