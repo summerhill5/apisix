@@ -269,42 +269,42 @@ Al usar el servidor de 8 núcleos de AWS, los QPS de APISIX alcanzan 140,000 con
 
 #### Las ventajas de Apache APISIX
 
-| **Features**                                                    | **Apache APISIX**                                 | **Kong**                |
+| **Prestaciones**                                                    | **Apache APISIX**                                 | **Kong**                |
 | :-------------------------------------------------------------- | :------------------------------------------------ | :---------------------- |
-| Belongs to                                                      | Apache Software Foundation                        | Kong Inc.               |
-| Tech Architecture                                               | Nginx + etcd                                      | Nginx + postgres        |
-| Communication channels                                          | Mail list, Wechat group, QQ group, GitHub, meetup | GitHub, freenode, forum |
-| Single-core CPU, QPS(enable limit-count and prometheus plugins) | 18000                                             | 1700                    |
-| Latency                                                         | 0.2 ms                                            | 2 ms                    |
+| Le pertenece a                                                      | Apache Software Foundation                        | Kong Inc.               |
+| Arquitectura de la tecnología                                               | Nginx + etcd                                      | Nginx + postgres        |
+| Canales de comunicación                                          | Lista de correos, grupo Wechat, grupo QQ, GitHub, meetup | GitHub, freenode, foro |
+| CPU de un solo núcleo, QPS (activa limit-count y plugins prometheus) | 18000                                             | 1700                    |
+| Latencia                                                         | 0.2 ms                                            | 2 ms                    |
 | Dubbo                                                           | Yes                                               | No                      |
-| Configuration rollback                                          | Yes                                               | No                      |
-| Route with TTL                                                  | Yes                                               | No                      |
-| Plug-in hot loading                                             | Yes                                               | No                      |
-| Custom LB and route                                             | Yes                                               | No                      |
-| REST API <--> gRPC transcoding                                  | Yes                                               | No                      |
+| Retroceso de configuration                                          | Yes                                               | No                      |
+| Ruta con TTL                                                  | Yes                                               | No                      |
+| Plug-in carga en caliente                                             | Yes                                               | No                      |
+| LB y ruta personalizados                                             | Yes                                               | No                      |
+| REST API <--> transcodificación gRPC                                  | Yes                                               | No                      |
 | Tengine                                                         | Yes                                               | No                      |
 | MQTT                                                            | Yes                                               | No                      |
-| Configuration effective time                                    | Event driven, < 1ms                               | polling, 5 seconds      |
-| Dashboard                                                       | Yes                                               | No                      |
+| Tiempo efectivo de Configuración                                    | Event driven, < 1ms                               | polling, 5 seconds      |
+| Tablero                                                       | Yes                                               | No                      |
 | IdP                                                             | Yes                                               | No                      |
-| Configuration Center HA                                         | Yes                                               | No                      |
-| Speed limit for a specified time window                         | Yes                                               | No                      |
-| Support any Nginx variable as routing condition                 | Yes                                               | No                      |
+| Centro de configuración HA                                         | Yes                                               | No                      |
+| Límite de velocidad para una ventana específica de tiempo         | Yes                                               | No                      |
+| Soporta cualquier variable Nginx cono condición de enrutamiento      | Yes                                               | No                      |
 
-Benchmark comparison test [details data](https://gist.github.com/membphis/137db97a4bf64d3653aa42f3e016bd01)
+Ensayo de comparación de desempeño [datos detallados](https://gist.github.com/membphis/137db97a4bf64d3653aa42f3e016bd01)
 
-### Contributor Over Time
+### Contribuciones a través del tiempo
 
 ![contributor-over-time](./doc/images/contributor-over-time.png)
 
-## Videos And Articles
+## Videos y Artículos
 
 - [Apache APISIX: How to implement plugin orchestration in API Gateway](https://www.youtube.com/watch?v=iEegNXOtEhQ)
 - [Improve Apache APISIX observability with Apache Skywalking](https://www.youtube.com/watch?v=DleVJwPs4i4)
 - [APISIX technology selection, testing and continuous integration](https://medium.com/@ming_wen/apache-apisixs-technology-selection-testing-and-continuous-integration-313221b02542)
 - [Analysis of Excellent Performance of Apache APISIX Microservices Gateway](https://medium.com/@ming_wen/analysis-of-excellent-performance-of-apache-apisix-microservices-gateway-fc77db4090b5)
 
-## User Stories
+## Historias de Usuarios
 
 - [European Factory Platform: API Security Gateway – Using APISIX in the eFactory Platform](https://www.efactory-project.eu/post/api-security-gateway-using-apisix-in-the-efactory-platform)
 - [ke.com: How to Build a Gateway Based on Apache APISIX(Chinese)](https://mp.weixin.qq.com/s/yZl9MWPyF1-gOyCp8plflA)
@@ -313,20 +313,20 @@ Benchmark comparison test [details data](https://gist.github.com/membphis/137db9
 - [Tencent Cloud: Why choose Apache APISIX to implement the k8s ingress controller?(Chinese)](https://www.upyun.com/opentalk/448.html)
 - [aispeech: Why we create a new k8s ingress controller?(Chinese)](https://mp.weixin.qq.com/s/bmm2ibk2V7-XYneLo9XAPQ)
 
-## Who Uses APISIX?
+## ¿Quién usa APISIX?
 
-A wide variety of companies and organizations use APISIX for research, production and commercial product, including:
+Una gran variedad de compañías y organizacioes usan APISIX para investigación, producción y productos comerciales, incluyendo:
 
 <img src="https://raw.githubusercontent.com/api7/website-of-API7/master/user-wall.jpg" width="900" height="500">
 
-Users are encouraged to add themselves to the [Powered By](doc/powered-by.md) page.
+Se alienta a los usuarios a sumarse a la página [Powered By](doc/powered-by.md).
 
 ## Landscape
 
 <p align="left">
 <img src="https://landscape.cncf.io/images/left-logo.svg" width="150">&nbsp;&nbsp;<img src="https://landscape.cncf.io/images/right-logo.svg" width="200">
 <br><br>
-APISIX enriches the <a href="https://landscape.cncf.io/category=api-gateway&format=card-mode&grouping=category">
+APISIX enriquece el <a href="https://landscape.cncf.io/category=api-gateway&format=card-mode&grouping=category">
 CNCF API Gateway Landscape.</a>
 </p>
 
@@ -335,10 +335,10 @@ CNCF API Gateway Landscape.</a>
 - [Apache APISIX logo(PNG)](logos/apache-apisix.png)
 - [Apache APISIX logo source](https://apache.org/logos/#apisix)
 
-## Acknowledgments
+## Reconocimientos
 
 Inspired by Kong and Orange.
 
-## License
+## Licencia
 
 [Apache 2.0 License](LICENSE)
