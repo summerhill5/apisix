@@ -284,7 +284,7 @@ Al usar el servidor de 8 núcleos de AWS, los QPS de APISIX alcanzan 140,000 con
 | REST API <--> transcodificación gRPC                                  | Sí                                               | No                      |
 | Tengine                                                         | Sí                                               | No                      |
 | MQTT                                                            | Sí                                               | No                      |
-| Tiempo efectivo de Configuración                                    | Determinado por los eventos, < 1ms                               | recabando datos, 5 seconds      |
+| Tiempo efectivo de Configuración                                    | Determinado por los eventos, < 1ms                               | recabando datos, 5 seg      |
 | Tablero                                                       | Sí                                               | No                      |
 | IdP                                                             | Sí                                               | No                      |
 | Centro de configuración HA                                         | Sí                                               | No                      |
