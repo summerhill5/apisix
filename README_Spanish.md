@@ -245,29 +245,29 @@ Hay varias maneras de instalar la versión publicada Apache de APISIX:
 
 Para más documentación, por favor visitar [Apache APISIX Document Index](doc/README.md)
 
-## Benchmark
+## Evaluación comparativa (Benchmark)
 
-Using AWS's 8 core server, APISIX's QPS reach to 140,000 with a latency of only 0.2 ms.
+Al usar el servidor de 8 núcleos de AWS, los QPS de APISIX alcanzan 140,000 con una latencia de solamente 0.2 ms.
 
-[Benchmark script](benchmark/run.sh), [test method and process](https://gist.github.com/membphis/137db97a4bf64d3653aa42f3e016bd01) has been open source, welcome to try and contribute.
+[Resultados de la evaluación (Benchmark script)](benchmark/run.sh), [método de ensayo y proceso](https://gist.github.com/membphis/137db97a4bf64d3653aa42f3e016bd01) han sido fuente abierta, usted es bienvenido a intentarlo y contribuir.
 
 ## Apache APISIX vs Kong
 
-#### Both of them have been covered core features of API gateway
+#### Ambos han sido cubiertos en cuanto a prestaciones del núcleo del portal (gateway) API 
 
-| **Features**         | **Apache APISIX** | **KONG** |
+| **Prestaciones**         | **Apache APISIX** | **KONG** |
 | :------------------- | :---------------- | :------- |
-| **Dynamic upstream** | Yes               | Yes      |
-| **Dynamic router**   | Yes               | Yes      |
-| **Health check**     | Yes               | Yes      |
-| **Dynamic SSL**      | Yes               | Yes      |
-| **L4 and L7 proxy**  | Yes               | Yes      |
-| **Opentracing**      | Yes               | Yes      |
-| **Custom plugin**    | Yes               | Yes      |
-| **REST API**         | Yes               | Yes      |
-| **CLI**              | Yes               | Yes      |
+| **Upstream dinámico** | Sí               | Sí      |
+| **Router dinámico**   | Sí               | Sí      |
+| **Chequeo del sistema**     | Sí               | Sí      |
+| **SSL dinámico**      | Sí               | Sí      |
+| **Proxy L4 y L7**  | Sí               | Sí      |
+| **Rastreo abierto**      | Sí               | Sí      |
+| **Plugin personalizado**    | Sí               | Sí      |
+| **REST API**         | Sí               | Sí      |
+| **CLI**              | Sí               | Sí      |
 
-#### The advantages of Apache APISIX
+#### Las ventajas de Apache APISIX
 
 | **Features**                                                    | **Apache APISIX**                                 | **Kong**                |
 | :-------------------------------------------------------------- | :------------------------------------------------ | :---------------------- |
