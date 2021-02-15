@@ -337,8 +337,8 @@ CNCF API Gateway Landscape.</a>
 
 ## Reconocimientos
 
-Inspired by Kong and Orange.
+Inspirado por Kong y Orange.
 
 ## Licencia
 
-[Apache 2.0 License](LICENSE)
+[Licencia Apache 2.0](LICENSE)
