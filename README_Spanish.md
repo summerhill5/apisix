@@ -185,33 +185,33 @@ Hay varias maneras de instalar la versión publicada Apache de APISIX:
 
    La imagen del contenedor Docker no incluye `etcd`, usted puede consultar [docker compose example](https://github.com/apache/apisix-docker/tree/master/example) para iniciar un grupo de ensayos.
 
-3. RPM package（only for CentOS 7）
-   - Installation runtime dependencies: OpenResty, etcd and OpenSSL develop library, refer to [install dependencies documentation](doc/install-dependencies.md#centos-7)
-   - install APISIX：
+3. Paquete RPM（sólo para CentOS 7）
+   - Instalación de dependencias en tiempo de ejecución: Librerías de desarrollo OpenResty, etcd y OpenSSL, consultar [install dependencies documentation](doc/install-dependencies.md#centos-7)
+   - Instalar APISIX：
 
    ```shell
    $ sudo yum install -y https://github.com/apache/apisix/releases/download/2.3/apisix-2.3-0.x86_64.rpm
    ```
 
-   - check version of APISIX:
+   - Chequear versión de APISIX:
 
      ```shell
      $ apisix version
      ```
 
-   - start APISIX:
+   - Iniciar APISIX:
 
      ```shell
      $ apisix start
      ```
 
-**Note**: Apache APISIX would not support the v2 protocol of etcd anymore since APISIX v2.0, and the minimum etcd version supported is v3.4.0. Please update etcd when needed. If you need to migrate your data from etcd v2 to v3, please follow [etcd migration guide](https://etcd.io/docs/v3.4.0/op-guide/v2-migration/).
+**Nota**: Apache APISIX no soportaría más el protocolo v2 de etcd desde APISIX v2.0, y la mínima versión soportada de etcd es v3.4.0. Favor actualizar etcd cuando sea necesario. Si usted necesita migrar sus datos desde etcd v2 a la v3, por favor siga los pasos indicados en [etcd migration guide](https://etcd.io/docs/v3.4.0/op-guide/v2-migration/).
 
-### For Developer
+### Para desarrolladores
 
-1. For developers, you can use the latest master branch to experience more features
+1. Para desarrolladores, usted puede usar la más reciente rama maestra (master branch) para experimentar más prestaciones
 
-   - build from source code
+   - Construir a partir del código fuente
 
    ```shell
    $ git clone git@github.com:apache/apisix.git
@@ -219,7 +219,7 @@ Hay varias maneras de instalar la versión publicada Apache de APISIX:
    $ make deps
    ```
 
-   - Docker image
+   - Imagen del contenedor Docker
 
    ```shell
    $ git clone https://github.com/apache/apisix-docker.git
@@ -227,23 +227,23 @@ Hay varias maneras de instalar la versión publicada Apache de APISIX:
    $ sudo docker build -f alpine-dev/Dockerfile .
    ```
 
-2. Getting start
+2. Comenzando
 
-   The getting started guide is a great way to learn the basics of APISIX, just follow the steps in [Getting Started](doc/getting-started.md).
+   La Guía para Comenzar es una excelente manera de aprender los fundamentos de APISIX, basta seguir los pasos en [Getting Started](doc/getting-started.md).
 
-   Further, you can follow the documentation to try more [plugins](doc/README.md#plugins).
+   Más aún, usted puede seguir la documentación para ensayar más [plugins](doc/README.md#plugins).
 
 3. Admin API
 
-   Apache APISIX provides [REST Admin API](doc/admin-api.md) to dynamic control the Apache APISIX cluster.
+   Apache APISIX brinda [REST Admin API](doc/admin-api.md) para controlar de forma dinámica el grupo (cluster) Apache APISIX.
 
-4. Plugin development
+4. Desarrollo de Plugin 
 
-   You can refer to [plugin development guide](doc/plugin-develop.md), and [sample plugin `echo`](doc/plugins/echo.md) documentation and code implementation.
+   Usted puede consultar la guía [plugin development guide](doc/plugin-develop.md), y la documentación e implementación de código [sample plugin `echo`](doc/plugins/echo.md).
 
-   Please note that Apache APISIX plugins' added, updated, deleted, etc. are hot loaded, without restarting the service.
+   Por favor note que los plugins de Apache APISIX added, updated, deleted, etc. no son cargados sin reiniciar el servicio.
 
-For more documents, please refer to [Apache APISIX Document Index](doc/README.md)
+Para más documentación, por favor visitar [Apache APISIX Document Index](doc/README.md)
 
 ## Benchmark
 
