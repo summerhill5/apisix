@@ -21,15 +21,15 @@
 
 ## Por qué un nuevo portal API?
 
-There are new requirements for API gateways in the field of microservices: higher flexibility, higher performance requirements, and cloud native.
+Existen nuevos requerimientos para los portales API en el campo de los microservicios: mayor flexibilidad, requerimientos de desempeño más elevados y origen (native) en la nube.
 
-## What are the differences between APISIX and other API gateways?
+## Cuáles son las diferencias entre APISIX y otros portales API?
 
-APISIX is based on etcd to save and synchronize configuration, not relational databases such as Postgres or MySQL.
+APISIX está basado en etcd para guardar y sincronizar la configuración, no en bases de datos relacionales tales como Postgres o MySQL.
 
-This not only eliminates polling, makes the code more concise, but also makes configuration synchronization more real-time. At the same time, there will be no single point in the system, which is more usable.
+Esto no solamente elimina el recabado de infoemación (polling) y hace el código más conciso, sino también hace que la sincronización de la configuración se haga más en tiempo real. Al mismo tiempo, no habrá un punto único en el sistema, lo que resulta más útil.
 
-In addition, APISIX has dynamic routing and hot loading of plug-ins, which is especially suitable for API management under micro-service system.
+Adicionalmente, APISIX tiene un enrutado dinámico y carga en caliente de los plug-ins, lo que es especialmente aplicable al manejo de API bajo sistemas de micro-servicios.
 
 ## What's the performance of APISIX?
 
