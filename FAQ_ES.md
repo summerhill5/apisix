@@ -1,25 +1,25 @@
 <!--
 #
-# Licensed to the Apache Software Foundation (ASF) under one or more
-# contributor license agreements.  See the NOTICE file distributed with
-# this work for additional information regarding copyright ownership.
-# The ASF licenses this file to You under the Apache License, Version 2.0
-# (the "License"); you may not use this file except in compliance with
-# the License.  You may obtain a copy of the License at
+# Con licencia para la Apache Software Foundation (ASF) bajo uno o más
+# acuerdos de licencia para contribuyentes.  Vea la notificación de distribución de archivos
+# de este trabajo para información adicional respecto a propiedad de copyright.
+# La ASF otorga licencia de este archivo a usted bajo la Apache License, Version 2.0
+# (la licencia "License"); usted no puede usar este archivo escepto bajo la
+#  licencia.  Usted puede obtener una copia de esta licencia en este sitio:
 #
 #     http://www.apache.org/licenses/LICENSE-2.0
 #
-# Unless required by applicable law or agreed to in writing, software
-# distributed under the License is distributed on an "AS IS" BASIS,
+# A menos que lo requiera una ley pertinente o que se acuerde por escrito, el software
+# distribuido bajo la licencia - License se distribuye en una base "TAL CUAL ESTÁ",
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-# See the License for the specific language governing permissions and
-# limitations under the License.
+# Ver detalles en la licencia - License sobre el lenguaje específico que gobierna las licencias
+# y las limitaciones que aplican bajo la licencia.
 #
 -->
 
-# FAQ
+# PREGUNTAS FRECUENTES
 
-## Why a new API gateway?
+## Por qué un nuevo portal API?
 
 There are new requirements for API gateways in the field of microservices: higher flexibility, higher performance requirements, and cloud native.
 
