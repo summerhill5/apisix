@@ -254,21 +254,21 @@ https://developer.apple.com/download/more/.
 Este es un problema de OS incompatible, y puede superarse con estos dos pasos
 
 1. `brew edit openresty/brew/openresty`
-2. Agregar `\ -fno-stack-check` en la línea with-luajit-xcflags line.
+2. Agregar `\ -fno-stack-check` en la línea con with-luajit-xcflags.
 
-## How to change the log level?
+## ¿Cómo cambiar el nivel de log?
 
-The default log level for APISIX is `warn`. However You can change the log level to `info` if you want to trace the messages print by `core.log.info`.
+El nivel de log por defecto para APISIX es `warn`. Sin embargo, usted puede cambiar el nivel de log a `info` si usted quiere rastrear los mensajes mostrados en `core.log.info`.
 
-Steps:
+Pasos:
 
-1. Modify the parameter `error_log_level: "warn"` to `error_log_level: "info"` in conf/config.yaml
+1. Modificar el parámetro `error_log_level: "warn"` a `error_log_level: "info"` en conf/config.yaml
 
-2. Reload or restart APISIX
+2. Recargar y reiniciar APISIX
 
-Now you can trace the info level log in logs/error.log.
+Ahora usted podrá rastrear y examinar el log del nivel info en logs/error.log.
 
-## How to reload your own plugin?
+## ¿Cómo recargar su propio plug-in?
 
 The Apache APISIX plugin supports hot reloading.
 See the `Hot reload` section in [plugins](./doc/plugins.md) for how to do that.
