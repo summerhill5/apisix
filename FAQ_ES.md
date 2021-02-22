@@ -19,11 +19,11 @@
 
 # PREGUNTAS FRECUENTES
 
-## Por qué un nuevo portal API?
+## ¿Por qué un nuevo portal API?
 
 Existen nuevos requerimientos para los portales API en el campo de los microservicios: mayor flexibilidad, requerimientos de desempeño más elevados y origen (native) en la nube.
 
-## Cuáles son las diferencias entre APISIX y otros portales API?
+## ¿Cuáles son las diferencias entre APISIX y otros portales API?
 
 APISIX está basado en etcd para guardar y sincronizar la configuración, no en bases de datos relacionales tales como Postgres o MySQL.
 
@@ -59,17 +59,17 @@ Para el centro de la For the configuración, la configuración del almacenamient
 
 Más información en [Por qué etcd](https://github.com/etcd-io/etcd/blob/master/Documentation/learning/why.md#comparison-chart).
 
-## Why is it that installing APISIX dependencies with Luarocks causes timeout, slow or unsuccessful installation?
+## ¿Por qué sucede que instalar dependencias APISIX con Luarocks provoca interrupciones por exceso de tiempo (timeout), o instalaciones lentas y fallidas?
 
-There are two possibilities when encountering slow luarocks:
+Existen dos posibilidades cuando encontramos Luarocks muy lentos:
 
-1. Server used for luarocks installation is blocked
-2. There is a place between your network and github server to block the 'git' protocol
+1. El servidor usado para instalar Luarocks está bloqueado
+2. En algún punto entre su red y el servidor de github se bloquea el protocolo 'git'
 
-For the first problem, you can use https_proxy or use the `--server` option to specify a luarocks server that you can access or access faster.
-Run the `luarocks config rocks_servers` command(this command is supported after luarocks 3.0) to see which server are available.
+Para el primer problema usted puede usar https_proxy o usar la opción `--server` para especificar un servidor de Luarocks al que usted pueda acceder con mayor velocidad.
+Ejecute el comando `luarocks config rocks_servers` (este comando es soportado por versiones posteriores a luarocks 3.0) para ver qué servidores están disponibles.
 
-If using a proxy doesn't solve this problem, you can add `--verbose` option during installation to see exactly how slow it is. Excluding the first case, only the second that the `git` protocol is blocked. Then we can run `git config --global url."https://".insteadOf git://` to using the 'HTTPS' protocol instead of `git`.
+Si usar un proxy no resuelve este problema, usted puede agregar la opción `--verbose` durante la instalación para ver qué tan lento está. Excluyendo el primer caso, solamente en el segundo, cuando el protocolo `git` está bloqueado, podemos ejecutar `git config --global url."https://".insteadOf git://` para usar el protocolo 'HTTPS' en lugar de `git`.
 
 ## How to support gray release via APISIX?
 
