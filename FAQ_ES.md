@@ -71,16 +71,16 @@ Ejecute el comando `luarocks config rocks_servers` (este comando es soportado po
 
 Si usar un proxy no resuelve este problema, usted puede agregar la opción `--verbose` durante la instalación para ver qué tan lento está. Excluyendo el primer caso, solamente en el segundo, cuando el protocolo `git` está bloqueado, podemos ejecutar `git config --global url."https://".insteadOf git://` para usar el protocolo 'HTTPS' en lugar de `git`.
 
-## How to support gray release via APISIX?
+## ¿Cómo se soporta un lanzamiento en etapa "gray release" (lanzamiento gris) a través de APISIX?
 
-An example, `foo.com/product/index.html?id=204&page=2`, gray release based on `id` in the query string in URL as a condition：
+Un ejemplo, `foo.com/product/index.html?id=204&page=2`, lanzamiento gris (gray release) basado en `id` en la cadena de consulta (query string) en URL como una condición：
 
-1. Group A：id <= 1000
-2. Group B：id > 1000
+1. Grupo A：id <= 1000
+2. Grupo B：id > 1000
 
-There are two different ways to do this：
+Hay dos formas diferentes de hacer esto：
 
-1. Use the `vars` field of route to do it.
+1. Usar el campo `vars` de la ruta para hacerlo.
 
 ```shell
 curl -i http://127.0.0.1:9080/apisix/admin/routes/1 -H 'X-API-KEY: edd1c9f034335f136f87ad84b625c8f1' -X PUT -d '
@@ -110,20 +110,20 @@ curl -i http://127.0.0.1:9080/apisix/admin/routes/2 -H 'X-API-KEY: edd1c9f034335
 }'
 ```
 
-Here is the operator list of current `lua-resty-radixtree`：
+Aquí encontramos la lista de operadores del `lua-resty-radixtree` actual：
 https://github.com/iresty/lua-resty-radixtree#operator-list
 
-2. Use `traffic-split` plugin to do it.
+2. Usar el plug-in `traffic-split` para hacerlo.
 
-Please refer to the [traffic-split.md](doc/plugins/traffic-split.md) plugin documentation for usage examples.
+Por favor consultar la documentación de plug-in [traffic-split.md](doc/plugins/traffic-split.md) para ver ejemplos de uso.
 
-## How to redirect http to https via APISIX?
+## ¿Cómo redireccionar http a https usando APISIX?
 
-An example, redirect `http://foo.com` to `https://foo.com`
+Por ejemplo, redireccionar `http://foo.com` a `https://foo.com`
 
-There are several different ways to do this.
+Hay varias maneras de hacerlo.
 
-1. Directly use the `http_to_https` in `redirect` plugin：
+1. Directamente usando el plug-in `http_to_https` in `redirect`：
 
 ```shell
 curl http://127.0.0.1:9080/apisix/admin/routes/1  -H 'X-API-KEY: edd1c9f034335f136f87ad84b625c8f1' -X PUT -d '
@@ -138,7 +138,7 @@ curl http://127.0.0.1:9080/apisix/admin/routes/1  -H 'X-API-KEY: edd1c9f034335f1
 }'
 ```
 
-2. Use with advanced routing rule `vars` with `redirect` plugin:
+2. Usando la regla avanzada de enrutamiento `vars` con el plug-in `redirect`:
 
 ```shell
 curl -i http://127.0.0.1:9080/apisix/admin/routes/1  -H 'X-API-KEY: edd1c9f034335f136f87ad84b625c8f1' -X PUT -d '
@@ -161,7 +161,7 @@ curl -i http://127.0.0.1:9080/apisix/admin/routes/1  -H 'X-API-KEY: edd1c9f03433
 }'
 ```
 
-3. `serverless` plugin：
+3. Con el plug-in `serverless`：
 
 ```shell
 curl -i http://127.0.0.1:9080/apisix/admin/routes/1  -H 'X-API-KEY: edd1c9f034335f136f87ad84b625c8f1' -X PUT -d '
@@ -176,13 +176,13 @@ curl -i http://127.0.0.1:9080/apisix/admin/routes/1  -H 'X-API-KEY: edd1c9f03433
 }'
 ```
 
-Then test it to see if it works：
+Luego hacemos una prueba para ver si funciona：
 
 ```shell
 curl -i -H 'Host: foo.com' http://127.0.0.1:9080/hello
 ```
 
-The response body should be:
+La respuesta debería ser:
 
 ```
 HTTP/1.1 301 Moved Permanently
