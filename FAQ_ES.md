@@ -31,33 +31,33 @@ Esto no solamente elimina el recabado de infoemación (polling) y hace el códig
 
 Adicionalmente, APISIX tiene un enrutado dinámico y carga en caliente de los plug-ins, lo que es especialmente aplicable al manejo de API bajo sistemas de micro-servicios.
 
-## What's the performance of APISIX?
+## ¿Cómo es el desempeño de APISIX?
 
-One of the goals of APISIX design and development is the highest performance in the industry. Specific test data can be found here：[benchmark](https://github.com/apache/apisix/blob/master/doc/benchmark.md)
+Uno de los objetivos del diseño y desarrollo de APISIX es lograr el más elevado desempeño en la industria. Datos de las pruebas específicas pueden consultarse aquí：[banco de pruebas - benchmark](https://github.com/apache/apisix/blob/master/doc/benchmark.md)
 
-APISIX is the highest performance API gateway with a single-core QPS of 23,000, with an average delay of only 0.6 milliseconds.
+APISIX es el portal API de mayor desempeño; con un QPS de un solo núcleo logra 23,000, con un retardo promedio de solamente 0.6 milisegundos.
 
-## Does APISIX have a console interface?
+## ¿Tiene APISIX un interfase de cónsola?
 
-Yes, in version 0.6 we have dashboard built in, you can operate APISIX through the web interface.
+Sí, en la versión 0.6 contamos con un tablero incorporado, y usted puede operar APISIX a través de la interfase web.
 
-## Can I write my own plugin?
+## ¿Puedo escribir mi propio plugin?
 
-Of course, APISIX provides flexible custom plugins for developers and businesses to write their own logic.
+Por supuesto, APISIX provee plugins personalizados y flexibles para que los desarrolladores y las empresas escriban sus propios programas.
 
-[How to write plugin](doc/plugin-develop.md)
+[Cómo escribir un plug-in](doc/plugin-develop.md)
 
-## Why we choose etcd as the configuration center?
+## ¿Por qué elegimos etcd como el centro de la configuración?
 
-For the configuration center, configuration storage is only the most basic function, and APISIX also needs the following features:
+Para el centro de la For the configuración, la configuración del almacenamiento es solamente la función más básica, y APISIX necesita también las siguientes prestaciones:
 
-1. Cluster
-2. Transactions
-3. Multi-version Concurrency Control
-4. Change Notification
-5. High Performance
+1. Grupos (Cluster) 
+2. Transacciones
+3. Control de concurrencia multi-versión
+4. Notificación de cambios
+5. Alto rendimiento
 
-See more [etcd why](https://github.com/etcd-io/etcd/blob/master/Documentation/learning/why.md#comparison-chart).
+Más información en [Por qué etcd](https://github.com/etcd-io/etcd/blob/master/Documentation/learning/why.md#comparison-chart).
 
 ## Why is it that installing APISIX dependencies with Luarocks causes timeout, slow or unsuccessful installation?
 
