@@ -202,9 +202,9 @@ Server: APISIX web server
 </html>
 ```
 
-## How to fix OpenResty Installation Failure on MacOS 10.15
+## Cómo arreglar un fallo de instalación de OpenResty en MacOS 10.15
 
-When you install the OpenResty on MacOs 10.15, you may face this error
+Cuando usted instala OpenResty en MacOs 10.15, usted puede encontrarse con este error
 
 ```shell
 > brew install openresty
@@ -251,10 +251,10 @@ Update them from Software Update in System Preferences or
 https://developer.apple.com/download/more/.
 ```
 
-This is an OS incompatible issue, you could fix by these two steps
+Este es un problema de OS incompatible, y puede superarse con estos dos pasos
 
 1. `brew edit openresty/brew/openresty`
-1. add `\ -fno-stack-check` in with-luajit-xcflags line.
+2. Agregar `\ -fno-stack-check` en la línea with-luajit-xcflags line.
 
 ## How to change the log level?
 
