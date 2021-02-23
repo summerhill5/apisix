@@ -313,7 +313,7 @@ Con la ayuda de etcd, cuyas prestaciones de notificación incremental son del ni
 
 ## ¿Cómo personalizar la id de instancia en APISIX?
 
-Por defecto, APISIX leerá la id de instancia en `conf/apisix.uid`. Si no se encuentra, y ninguna id está configurada, APISIX generará una `uuid` como la ide de instancia.
+Por defecto, APISIX leerá la id de instancia en `conf/apisix.uid`. Si no se encuentra, y ninguna id está configurada, APISIX generará una `uuid` como la id de instancia.
 
 Si usted desea especificar una id de su preferencia para asegurar la instancia de APISIX a su sistema interno, podrá configurarla en `conf/config.yaml`, por ejemplo:
 
