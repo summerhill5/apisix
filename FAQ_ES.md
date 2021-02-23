@@ -270,14 +270,14 @@ Ahora usted podrá rastrear y examinar el log del nivel info en logs/error.log.
 
 ## ¿Cómo recargar su propio plug-in?
 
-The Apache APISIX plugin supports hot reloading.
-See the `Hot reload` section in [plugins](./doc/plugins.md) for how to do that.
+El plug-in The Apache APISIX soporta recargas en caliente.
+Ver la sección `Hot reload` en [plugins](./doc/plugins.md) para tener información acerca de cómo hacerlo.
 
-## How to make APISIX listen on multiple ports when handling HTTP or HTTPS requests?
+## ¿Cómo lograr que APISIX atienda múltiples puertos cuando esté manejando solicitudes (requests) HTTP o HTTPS?
 
-By default, APISIX only listens on port 9080 when handling HTTP requests. If you want APISIX to listen on multiple ports, you need to modify the relevant parameters in the configuration file as follows:
+Por defecto, APISIX atiende solamente el puerto 9080 cuando maneja solicitudes HTTP. Si usted desea que APISIX atienda solicitudes de múltiples puertos, Ud. deberá modificar los parámetros relevantes del archivo de configuración como se muestra a continuación:
 
-1. Modify the parameter of HTTP port listen `node_listen` in `conf/config.yaml`, for example:
+1. Modificar el parámetro de puertos atendidos de HTTP, `node_listen` en `conf/config.yaml`, por ejemplo:
 
    ```
     apisix:
@@ -287,7 +287,7 @@ By default, APISIX only listens on port 9080 when handling HTTP requests. If you
         - 9082
    ```
 
-   Handling HTTPS requests is similar, modify the parameter of HTTPS port listen `ssl.listen_port` in `conf/config.yaml`, for example:
+   El manejo de las solicitudes HTTPS es similar, modificando el parámetro de puertos atendidos de HTTPS, `ssl.listen_port` en `conf/config.yaml`, por ejemplo:
 
     ```
     apisix:
@@ -298,9 +298,9 @@ By default, APISIX only listens on port 9080 when handling HTTP requests. If you
           - 9445
     ```
 
-2. Reload or restart APISIX
+2. Recargar y reiniciar APISIX
 
-## How does APISIX use etcd to achieve millisecond-level configuration synchronization
+## ¿Cómo usa APISIX a etcd para lograr una sincronización de configuración en un nivel de milisegundos?
 
 etcd provides subscription functions to monitor whether the specified keyword or directory is changed (for example: [watch](https://github.com/api7/lua-resty-etcd/blob/master/api_v3.md#watch), [watchdir](https://github.com/api7/lua-resty-etcd/blob/master/api_v3.md#watchdir)).
 
