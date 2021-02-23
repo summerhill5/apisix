@@ -302,20 +302,20 @@ Por defecto, APISIX atiende solamente el puerto 9080 cuando maneja solicitudes H
 
 ## ¿Cómo usa APISIX a etcd para lograr una sincronización de configuración en un nivel de milisegundos?
 
-etcd provides subscription functions to monitor whether the specified keyword or directory is changed (for example: [watch](https://github.com/api7/lua-resty-etcd/blob/master/api_v3.md#watch), [watchdir](https://github.com/api7/lua-resty-etcd/blob/master/api_v3.md#watchdir)).
+etcd provee funciones de subscripción para monitorear si la palabra clave específica o si el directorio sufren algún cambio (por ejemplo: [watch](https://github.com/api7/lua-resty-etcd/blob/master/api_v3.md#watch), [watchdir](https://github.com/api7/lua-resty-etcd/blob/master/api_v3.md#watchdir)).
 
-APISIX uses [etcd.watchdir](https://github.com/api7/lua-resty-etcd/blob/master/api_v3.md#watchdir) to monitor directory content changes:
+APISIX usa [etcd.watchdir](https://github.com/api7/lua-resty-etcd/blob/master/api_v3.md#watchdir) para monitorear cambios en el contenido del directorio:
 
-* If there is no data update in the monitoring directory: the process will be blocked until timeout or other errors occurred.
-* If the monitoring directory has data updates: etcd will return the new subscribed data immediately (in milliseconds), and APISIX will update it to the memory cache.
+* Si no hay ninguna actualización en los datos del directorio monitoreado: el proceso será bloqueadohasta que termine el tiempo (timeout) o hasta que ocurran otros errores.
+* Si el directorio monitoreado sufre una actualización en sus datos: etcd retornará los nuevos datos suscritos inmediatamente (en milisegundos), y APISIX lo actualizará en la memoria caché.
 
-With the help of etcd which incremental notification feature is millisecond-level , APISIX achieve millisecond-level of configuration synchronization.
+Con la ayuda de etcd, cuyas prestaciones de notificación incremental son del nivel de milisegundos, APISIX alcanza este mismo nivel de milisegundos en la sincronización de la configuración.
 
-## How to customize the APISIX instance id?
+## ¿Cómo personalizar la id de instancia en APISIX?
 
-By default, APISIX will read the instance id from `conf/apisix.uid`. If it is not found, and no id is configured, APISIX will generate a `uuid` as the instance id.
+Por defecto, APISIX leerá la id de instancia en `conf/apisix.uid`. Si no se encuentra, y ninguna id está configurada, APISIX generará una `uuid` como la ide de instancia.
 
-If you want to specify a meaningful id to bind APISIX instance to your internal system, you can configure it in `conf/config.yaml`, for example:
+Si usted desea especificar una id de su preferencia para asegurar la instancia de APISIX a su sistema interno, podrá configurarla en `conf/config.yaml`, por ejemplo:
 
     ```
     apisix:
