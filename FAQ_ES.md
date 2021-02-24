@@ -27,7 +27,7 @@ Existen nuevos requerimientos para los portales API en el campo de los microserv
 
 APISIX está basado en etcd para guardar y sincronizar la configuración, no en bases de datos relacionales tales como Postgres o MySQL.
 
-Esto no solamente elimina el recabado de infoemación (polling) y hace el código más conciso, sino también hace que la sincronización de la configuración se haga más en tiempo real. Al mismo tiempo, no habrá un punto único en el sistema, lo que resulta más útil.
+Esto no solamente elimina el recabado de información (polling) y hace el código más conciso, sino también hace que la sincronización de la configuración se haga más en tiempo real. Al mismo tiempo, no habrá un punto único en el sistema, lo que resulta más útil.
 
 Adicionalmente, APISIX tiene un enrutado dinámico y carga en caliente de los plug-ins, lo que es especialmente aplicable al manejo de API bajo sistemas de micro-servicios.
 
