@@ -326,7 +326,7 @@ Si usted desea especificar una id de su preferencia para asegurar la instancia d
 
 En primer lugar asegúrese de que la red entre APISIX y el cluster de etcd no está particionada.
 
-Si la red está en buenas condiciones, por favor revise que su cluster de etcd tenga activado el portal gRPC [gRPC gateway](https://etcd.io/docs/v3.4.0/dev-guide/api_grpc_gateway/). Sin embargo, el caso por defecto para esta cracterística es diferente cuando se usan las opciones de la línea de comandos que cuando se usa el archivo de configuración para iniciar el servidor etcd.
+Si la red está en buenas condiciones, por favor revise que su cluster de etcd tenga activado el portal [gRPC gateway](https://etcd.io/docs/v3.4.0/dev-guide/api_grpc_gateway/). Sin embargo, el caso por defecto para esta característica es diferente cuando se usan las opciones de la línea de comandos que cuando se usa el archivo de configuración para iniciar el servidor etcd.
 
 1. Cuando se usan las opciones de la línea de comandos, esta característica es activada por defecto, la opción pertinente es `--enable-grpc-gateway`.
 
@@ -348,10 +348,10 @@ Nótese que esta opción no se muestra en la salida de `etcd --help`.
 
 Esta distinción fue eliminada por etcd en su ramal principal (master branch), pero no se trasladó la modificación a las versiones anunciadas, así que sea prudente al desplegar su cluster de etcd.
 
-## How to set up high available Apache APISIX clusters?
+## ¿Cómo lograr clusters Apache APISIX con disponibilidad elevada?
 
-The high availability of APISIX can be divided into two parts:
+La elevada disponibilidad de APISIX puede dividirse en dos partes:
 
-1. The data plane of Apache APISIX is stateless and can be elastically scaled at will. Just add a layer of LB in front.
+1. El plano de datos de Apache APISIX carece de estados y su escala se puede cambiar elásticamente a voluntad. Basta añadir una capa (layer) de LB en el frente.
 
-2. The control plane of Apache APISIX relies on the highly available implementation of `etcd cluster` and does not require any relational database dependency.
+2. El plano de datos de Apache APISIX tiene su base en la implementación de alta disponibilidad de `etcd cluster` y no requiere ninguna dependencia de base de datos relacional.
