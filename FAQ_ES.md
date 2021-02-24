@@ -123,7 +123,7 @@ Por ejemplo, redireccionar `http://foo.com` a `https://foo.com`
 
 Hay varias maneras de hacerlo.
 
-1. Directamente usando el plug-in `http_to_https` in `redirect`：
+1. Directamente usando el plug-in `http_to_https` en `redirect`：
 
 ```shell
 curl http://127.0.0.1:9080/apisix/admin/routes/1  -H 'X-API-KEY: edd1c9f034335f136f87ad84b625c8f1' -X PUT -d '
