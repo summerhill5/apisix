@@ -322,21 +322,21 @@ Si usted desea especificar una id de su preferencia para asegurar la instancia d
       id: "your-meaningful-id"
     ```
 
-## Why there are a lot of "failed to fetch data from etcd, failed to read etcd dir, etcd key: xxxxxx" errors in error.log?
+## ¿Por qué aparece con frecuencia el error "failed to fetch data from etcd, failed to read etcd dir, etcd key: xxxxxx" (no se pudieron leer los datos de etcd, no se pudo leer el dir de etcd, etcd key: xxxxxx) en el archivo error.log?
 
-First please make sure the network between APISIX and etcd cluster is not partitioned.
+En primer lugar asegúrese de que la red entre APISIX y el cluster de etcd no está particionada.
 
-If the network is healthy, please check whether your etcd cluster enables the [gRPC gateway](https://etcd.io/docs/v3.4.0/dev-guide/api_grpc_gateway/).  However, The default case for this feature is different when use command line options or configuration file to start etcd server.
+Si la red está en buenas condiciones, por favor revise que su cluster de etcd tenga activado el portal gRPC [gRPC gateway](https://etcd.io/docs/v3.4.0/dev-guide/api_grpc_gateway/). Sin embargo, el caso por defecto para esta cracterística es diferente cuando se usan las opciones de la línea de comandos que cuando se usa el archivo de configuración para iniciar el servidor etcd.
 
-1. When command line options is in use, this feature is enabled by default, the related option is `--enable-grpc-gateway`.
+1. Cuando se usan las opciones de la línea de comandos, esta característica es activada por defecto, la opción pertinente es `--enable-grpc-gateway`.
 
 ```sh
 etcd --enable-grpc-gateway --data-dir=/path/to/data
 ```
 
-Note this option is not shown in the output of `etcd --help`.
+Nótese que esta opción no se muestra en la salida de `etcd --help`.
 
-2. When configuration file is used, this feature is disabled by default, please enable `enable-grpc-gateway` explicitly.
+2. Cuando se usa el archivo de configuración, esta característica está desactivada por defecto, por favor actívela usando `enable-grpc-gateway` de manera explícita.
 
 ```json
 # etcd.json
@@ -346,7 +346,7 @@ Note this option is not shown in the output of `etcd --help`.
 }
 ```
 
-Indeed this distinction was eliminated by etcd in their master branch, but not backport to announced versions, so be care when deploy your etcd cluster.
+Esta distinción fue eliminada por etcd en su ramal principal (master branch), pero no se trasladó la modificación a las versiones anunciadas, así que sea prudente al desplegar su cluster de etcd.
 
 ## How to set up high available Apache APISIX clusters?
 
