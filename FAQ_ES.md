@@ -49,7 +49,7 @@ Por supuesto, APISIX provee plugins personalizados y flexibles para que los desa
 
 ## ¿Por qué elegimos etcd como el centro de la configuración?
 
-Para el centro de la For the configuración, la configuración del almacenamiento es solamente la función más básica, y APISIX necesita también las siguientes prestaciones:
+Para el centro de la configuración, la configuración del almacenamiento es solamente la función más básica, y APISIX necesita también las siguientes prestaciones:
 
 1. Grupos (Cluster) 
 2. Transacciones
