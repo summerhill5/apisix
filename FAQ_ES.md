@@ -306,7 +306,7 @@ etcd provee funciones de subscripción para monitorear si la palabra clave espec
 
 APISIX usa [etcd.watchdir](https://github.com/api7/lua-resty-etcd/blob/master/api_v3.md#watchdir) para monitorear cambios en el contenido del directorio:
 
-* Si no hay ninguna actualización en los datos del directorio monitoreado: el proceso será bloqueadohasta que termine el tiempo (timeout) o hasta que ocurran otros errores.
+* Si no hay ninguna actualización en los datos del directorio monitoreado: el proceso será bloqueado hasta que termine el tiempo (timeout) o hasta que ocurran otros errores.
 * Si el directorio monitoreado sufre una actualización en sus datos: etcd retornará los nuevos datos suscritos inmediatamente (en milisegundos), y APISIX lo actualizará en la memoria caché.
 
 Con la ayuda de etcd, cuyas prestaciones de notificación incremental son del nivel de milisegundos, APISIX alcanza este mismo nivel de milisegundos en la sincronización de la configuración.
